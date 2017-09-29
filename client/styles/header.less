@@ -1,0 +1,88 @@
+
+.header {
+    .am-navbar {
+        position: relative;
+        height: 70px;
+        z-index: 2;
+        background-color: #c70000;
+    }
+    .am-navbar-title {
+        flex: 2;
+        .am-flexbox {
+            width: 100%;
+            text-align: center;
+            .am-flexbox-item {
+                a {
+                    color: #fff;
+                }
+                span.fa {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    .am-drawer-sidebar {
+        width: 80%;
+    }
+    .sildebar-user-info {
+        height: 7%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        background: #222;
+        color: #fff;
+        div {
+            font-size: 14px;
+        }
+        a {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-top: 30px;
+            border-radius: 50px;
+            border: 1px solid #fff;
+            color: #fff;
+            font-size: 12px;
+        }
+    }
+    .am-navbar-left-content>span,
+    .am-navbar-title>span {
+        font-size: 28px;
+    }
+    .am-navbar-right>a>span {
+        font-size: 28px;
+        color: #fff;
+    }
+    .am-list-item {
+        min-height: 30px;
+        .am-list-content {
+            line-height: 0;
+            padding: 15px 5px;
+            border-bottom: 1px solid #eee;
+            span.fa {
+                display: inline-block;
+                margin-right: 5%;
+                color: #a4a4a4;
+            }
+            a {
+                color: #000;
+                font-size: 10px;
+            }
+        }
+    }
+    .am-list-line {
+        min-height: 30px
+    }
+    .am-list-body:after,
+    .am-list-body div:not(:last-child) .am-list-line:after{
+        border-bottom: 0;
+    }
+    .small-logo {
+        width: 30px;
+        height: 30px;
+        vertical-align: -5px;
+
+    }
+    .am-drawer-draghandle {
+        width: 10px!important;
+    }
+ }

@@ -1,0 +1,57 @@
+[
+    {
+        "id": 5617098,
+        "type": 5,
+        "name": "Stay in my Life",
+        "copywriter": "编辑推荐：NCT献唱《学校2017》OST ，MV大放送！",
+        "picUrl": "http://p1.music.126.net/Y6_oD7arFgDiyuOf7ciEoQ==/19044640904983829.jpg",
+        "canDislike": false,
+        "duration": 196000,
+        "playCount": 32868,
+        "artistName": "泰一",
+        "artistId": 11991098,
+        "alg": "featured"
+    },
+    {
+        "id": 5611917,
+        "type": 5,
+        "name": "风一样的我",
+        "copywriter": "编辑推荐：叶炫清《风一样的我》MV发布 ",
+        "picUrl": "http://p1.music.126.net/V4RLYz7QDvvZdnivDRAOkg==/19098516974787575.jpg",
+        "canDislike": false,
+        "duration": 270000,
+        "playCount": 59840,
+        "subed": false,
+        "artistName": "叶炫清",
+        "artistId": 12186038,
+        "alg": "featured"
+    },
+    {
+        "id": 5611911,
+        "type": 5,
+        "name": "你猜我猜不猜",
+        "copywriter": "最新热门MV推荐",
+        "picUrl": "http://p1.music.126.net/Fful6VaZd9Ej1a7R7sJScA==/18703792302097355.jpg",
+        "canDislike": true,
+        "duration": 109000,
+        "playCount": 323112,
+        "subed": false,
+        "artistName": "GAI爷",
+        "artistId": 1211046,
+        "alg": "hot_server"
+    },
+    {
+        "id": 5618022,
+        "type": 5,
+        "name": "Find Me",
+        "copywriter": "最新热门MV推荐",
+        "picUrl": "http://p1.music.126.net/LVmAIhJ9Tpge0qmZBfA1Gw==/19205169602647654.jpg",
+        "canDislike": true,
+        "duration": 188000,
+        "playCount": 30820,
+        "subed": false,
+        "artistName": "Marshmello",
+        "artistId": 1060019,
+        "alg": "hot_server"
+    }
+]

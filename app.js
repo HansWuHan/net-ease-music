@@ -5,8 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index = require('./routes/index');
-var users = require('./routes/users');
+var user = require('./server/routes/user');
 
 var mongoose = require('mongoose'),
     DB_URL = 'mongodb://localhost:27017/myapp';
@@ -76,8 +75,7 @@ app.all('*',function(req, res, next) {
     next();
 });
 
-app.use('/', index);
-app.use('/users', users);
+app.use('/api', user);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

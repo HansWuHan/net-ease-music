@@ -1,0 +1,171 @@
+.footer {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 998;
+    background: #fff;
+    .player-mini {
+        height: 100%;
+        background-color: #f5f5f5;
+        color: #333;
+        .mini-content {
+            display: flex;
+            height: 100%;
+            flex-direction: row;
+            align-items: center;
+            .music-logo {
+                width: 60px;
+                height: 60px;
+                img {
+                    width:100%;
+                }
+                
+            }
+            
+            .info {
+                flex: 1 0 20%;
+                padding-left: 10px;
+                .name {
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    color: #2a2a2a;
+                }
+                .artist {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    color: #858585;
+                    font-size: 12px;
+                }
+            }
+                
+            .mini-option {
+                flex: 1 0 0%;
+                width: 0;
+                display:flex;
+                flex-direction:row;
+                .mini-btn {
+                    width: 60px;
+                    height: 60px;
+                }
+                
+                .player {
+                    background: url("../../public/imgs/playbar_btn_play.png") no-repeat center;
+                    background-size: 70%;
+                }
+                
+                .pause {
+                    background: url("../../public/imgs/playbar_btn_pause.png") no-repeat center;
+                    background-size: 70%;
+                }
+                
+                .player-list {
+                    background: url("../../public/imgs/playbar_btn_playlist.png") no-repeat left center;
+                    background-size: 100%;
+                }
+                
+                .next {
+                    background: url("../../public/imgs/playbar_btn_next.png") no-repeat left center;
+                    background-size: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+.option-area {
+    .select-type {
+        display: inline-block;
+    }
+    .loop {
+        font-size: 14px;
+        img {
+            width: 30px;
+            height: 12px;
+            vertical-align: baseline;
+        }
+    }
+    .delete {
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 14px;
+        img {
+            width: 18px;
+            height: 16px;
+            vertical-align: text-top;
+        }
+    }
+}
+.list-wrapper {
+    box-sizing:border-box;
+    height: 100%;
+    width: 100%;
+    padding: 0 0 0 10px;
+    overflow: auto;
+    margin-top: 50px;
+    -webkit-overflow-scrolling: touch;
+}
+.list-item {
+    box-sizing:border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px 10px 0;
+    border-bottom:1px solid #e7e7e7;
+    .left {
+        .list-name{
+        color: #232323;
+        font-size:16px;
+        }
+        .list-singer{
+        color: #7b7b7b;
+        font-size:12px;
+        }
+    }
+    img{
+        width:30px;
+    }
+}
+.on {
+    color: #ce3d3e;
+    .left {
+        .list-name{
+        color: #ce3d3e;
+        }
+        .list-singer{
+        color: #ce3d3e;
+        }
+    }
+}
+  
+.play-songs-list {
+    .am-list-header {
+        padding: 10px;
+    }
+    .am-icon-md {
+        width: 30px;
+        height: 30px;
+    }
+    .am-list-item {
+        min-height: 30px;
+        .am-list-line {
+            min-height: 30px;
+            .am-list-content {
+                font-size: 14px;
+            }
+        }
+    }
+}
+        
+        
+          
+

@@ -1,0 +1,128 @@
+.recommend-container .am-flexbox{
+    height:80px;
+    text-align: center;
+    padding: 5% 4%;
+    border-bottom: 1px solid #ccc;
+}
+.recommend-container .am-flexbox-item{
+    height:100%;
+    div {
+        width: 60px;
+        height: 60px;
+        margin-left: calc(50% - 30px);
+        border-radius: 30px;
+        border: 1px solid #7c0000;
+        span {
+            margin-top: 20px;
+            font-size: 22px;
+            color: #c70000;
+        }
+    }
+    span {
+        display: block;
+        margin-top: 10%;
+        font-size: 10px;
+    }
+}
+
+.recommend-title {
+    margin: 5% 2% 5%;
+    padding-left: 10px;
+    font-size: 16px;
+    border-left: 5px solid #c70000;
+}
+
+.recommend-content {
+    width: 32%;
+    margin: 0 0.5%;
+}
+.mv-content {
+    width: 48%;
+    margin: 0 0.5%;
+}
+.new-songs {
+    display: inline;
+}
+
+.recommend-songs {
+    .am-flexbox {
+        text-align: center;
+    }
+    .content {
+        display: inline-block;
+        padding-bottom: 7%;
+        text-align: left;
+        vertical-align: top;
+        .song-cover {
+            position: relative;
+            p {
+                position: absolute;
+                top: -10px;
+                right: 20px;
+                font-size: 5%;
+                color: #fff;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .song-title {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 5%;
+        }
+        .song-subtitle {
+            padding: 7px;
+            font-size: 5%;
+            color: #ddd;
+        }
+        .left-content {
+            display: inline-block;
+            width: 70%;
+            height: 200px;
+            vertical-align: top;
+            span {
+                display: inline-block;
+                padding: 8px;
+                margin-left: 10px;
+                border:1px solid red;
+                color: red;
+            }
+            p {
+                position: absolute;
+                bottom: 10px;
+                color: #ddd;
+            }
+        }
+        .right-content {
+            display: inline-block;
+            width: 30%;
+            text-align: right;
+            img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+    .column-content {
+        position: relative;
+        padding:10px 0;
+        border-bottom: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+    }
+    
+    .song-describition {
+        overflow: hidden;
+        text-align: left; 
+        font-size: 10px;
+    }
+}
+
+.exclusive-songs {
+    .mv-content:last-of-type {
+        width: 98%;
+        margin: 0 1%;
+    }
+}

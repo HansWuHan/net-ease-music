@@ -1,0 +1,92 @@
+
+.search-input::-webkit-input-placeholder {
+    color:#eee;  
+} 
+.search-input:focus {
+    color: #eee;
+    border-bottom: 2px solid #eee;
+    &::-webkit-input-placeholder {
+        color:#ddd; 
+    } 
+} 
+.search-input-container {
+    display: inline-block;
+    width: 85%;
+    .search-input {
+        width: 80%;
+        padding-bottom: 20px;
+        background: transparent;
+        border:none;
+        color:#a4a4a4;
+    }
+}
+
+.search-clear {
+    float: right;
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.search-content {
+    padding: 10px;
+    p {
+        color: #a4a4a4;
+        font-size: 16px;
+    }
+    .search-label {
+        a {
+            display: inline-block;
+            margin: 5px 5px 0;
+            padding: 2px 10px;
+            border: 1px solid #a4a4a4;
+            border-radius: 50px;
+            font-size: 14px;
+        }
+    }
+}
+
+
+.search-record {
+    padding: 0;
+    font-size: 12px;
+    list-style: none;
+    .record-item {
+        padding: 10px 20px;
+        color: #a4a4a4;
+        span {
+            display: inline-block;
+        }
+        .record-left {
+            float: left;
+            margin-right: 20px;
+        }
+        .record-right {
+            float: right;
+        }
+    }
+}
+
+.search-result {
+    padding: 10px;
+    font-size: 10px;
+    list-style: none;
+    font-size: 12px;
+    li {
+        padding: 7px;
+        border-bottom: 1px solid #eee;
+    }
+    .song-name {
+        font-size: 12px;
+        color: #111f8e
+    }
+    .song-artist {
+        color: #a4a4a4;
+    }
+    .song-right {
+        float: right;
+        margin-top: -20px;
+        color: #a4a4a4;
+    }
+}
