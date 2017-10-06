@@ -7,6 +7,7 @@ import Header from "./header";
 import '../styles/home.less'
 import Recommend from '../components/Home/recommend'
 import Playlist from '../components/Home/playlist'
+import Ranking from '../components/Home/rank'
 import {
     connect
 } from "react-redux";
@@ -39,7 +40,7 @@ class Home extends Component {
                     <TabPane tab="排行榜" key="3">
                         <div style={{ display: 'flex', alignItems: 'left', justifyContent: 'center',  backgroundColor: '#fff' }}>
                             <LazyLoad height={200}>
-                                <span>这是排行榜页面</span>
+                                <Ranking/>
                             </LazyLoad>
                         </div>
                     </TabPane>
