@@ -12,6 +12,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/playlist',home.getPlayList);
+router.get('/personalized',home.getPersonalized);
 router.get('/officialrank',rank.getOfficialRank);
 router.get('/nationalrank',rank.getNationalRank);
 

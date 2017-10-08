@@ -29,7 +29,6 @@ mongoose.connection.on('disconnected', function () {
 });
 
 
-
 var app = express();
 
 if (process.env.NODE_ENV !== 'production') {
@@ -77,6 +76,17 @@ app.all('*',function(req, res, next) {
 
 app.use('/api', user);
 
+var MongoClient = require('mongodb').MongoClient;
+var fs=require('fs');
+//这里的songs.json是mongoDB目录下的歌曲数据
+var file="./mongoDB/personal.json";
+//读取文件
+var result=JSON.parse(fs.readFileSync(file));
+//连接数据库并将文件读取数据添加进数据库对应的 Account 表单中
+MongoClient.connect(DB_URL,function(err, db) {
+    //这里的Songs就是数据库集合的内容
+    db.collection('personalized').insert(result);
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

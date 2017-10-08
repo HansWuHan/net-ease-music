@@ -1,13 +1,11 @@
 import React,{ Component } from 'react';
 import { render } from 'react-dom';
-//引入组件
 import { Carousel } from 'antd-mobile';
 import './carousels.less';
 
 class Carousels extends Component {
     constructor(props) {
         super(props);
-        //data是轮播图的数据
         this.state = {
             data: [],
             initialHeight: 350,
