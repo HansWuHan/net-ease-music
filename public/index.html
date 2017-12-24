@@ -7,9 +7,13 @@
         <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
-        <!-- 需要和index.js的保持一致 -->
         <div id="content"></div>
-        <!-- 这是webpack编译后产生的js -->
         <script type="text/javascript" src="/js/bundle.js"></script>
+        <script>
+            if(!window.Promise) {
+                document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+            }
+        </script>
     </body>
 </html>
+

@@ -1,28 +1,30 @@
-//引入react
+// 引入react
 import React, { Component } from 'react'
+import { connect } from "react-redux";
 import { Tabs } from 'antd-mobile';
-//是react懒加载
 import LazyLoad from 'react-lazyload';
 import Header from "./header";
-import '../styles/home.less'
 import Recommend from '../components/Home/recommend'
-import Playlist from '../components/Home/playlist'
-import Ranking from '../components/Home/rank'
-import {
-    connect
-} from "react-redux";
+import Ranking from '../components/Home/ranking'
+import PlayList from '../components/Home/playList'
+import '../styles/home.less'
+
 const TabPane = Tabs.TabPane;
 
 class Home extends Component {
     constructor(props) {
         super(props);
     }
+   
+    componentDidMount() {
+        
+    }
 
     render() {
         return(
             <div>
                 <Header />
-                <Tabs defaultActiveKey="1" swipeable={false}>
+                <Tabs defaultActiveKey="1" swipeable={false} >
                     <TabPane tab="个性推荐" key="1">
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center',  backgroundColor: '#fff' }}>
                             <LazyLoad height={200}>
@@ -33,7 +35,7 @@ class Home extends Component {
                     <TabPane tab="歌单" key="2">
                         <div style={{ display: 'flex', alignItems: 'left', justifyContent: 'center',  backgroundColor: '#fff' }}>
                             <LazyLoad height={200}>
-                                <Playlist/>
+                                <PlayList/>
                             </LazyLoad>
                         </div>
                     </TabPane>
@@ -45,14 +47,14 @@ class Home extends Component {
                         </div>
                     </TabPane>
                 </Tabs>
-            </div>
+            </div> 
         )
     }
 }
 
 function select(state){
     return{
-
+        
     }
 }
 

@@ -44,7 +44,7 @@ var RankSchema = new Schema({
     ToplistType:{ type: String, default: '' },
     //评价数量
     commentCount: { type: Number, default: 0}
-
+	
 });
 
 var Rank = mongoose.model('Rank', RankSchema,'Rank');

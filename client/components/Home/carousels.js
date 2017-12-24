@@ -1,17 +1,13 @@
 import React,{ Component } from 'react';
 import { render } from 'react-dom';
-import { Carousel } from 'antd-mobile';
+import { Carousel, WhiteSpace, WingBlank } from 'antd-mobile';
 import './carousels.less';
 
 class Carousels extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            data: [],
-            initialHeight: 350,
-        }
+    state = {
+        data: ['', '', '', ''],
+        initialHeight: 350,
     }
-
     componentDidMount() {
         setTimeout(() => {
             this.setState({

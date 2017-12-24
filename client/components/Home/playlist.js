@@ -1,9 +1,14 @@
+// 引入react
 import React, { Component } from 'react'
-import './playList.less'
-import {connect} from "react-redux";
+import FontAwesome from 'react-fontawesome';
 import { Flex } from 'antd-mobile';
-import { getPlayList } from "../../actions/home";
-
+import './playList.less'
+import {
+    getPlayList,
+} from "../../actions/home";
+import {
+    connect
+} from "react-redux";
 class PlayList extends Component {
     constructor(props) {
         super(props);
@@ -14,9 +19,9 @@ class PlayList extends Component {
     }
 
     render() {
-        const { playListDetail }=this.props;
+        const { playListDetail }=this.props
         return(
-            <div className="playlist">
+            <div className='palylist'>
                 <a href='#' className='banner'>
                     <img src='/imgs/song_cover8.jpg'/>
                     <div>
@@ -48,9 +53,8 @@ class PlayList extends Component {
                         )
                     })
                 }
-            </div>
+            </div> 
         )
-
     }
 }
 

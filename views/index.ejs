@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+    <head>
+        <title>网易云音乐</title>
+        <link rel="stylesheet" href="/fonts/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="content"></div>
+        <script type="text/javascript" src="/js/bundle.js"></script>
+        <script>
+            if(!window.Promise) {
+                document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+            }
+        </script>
+    </body>
 </html>
+

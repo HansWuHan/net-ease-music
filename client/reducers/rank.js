@@ -2,7 +2,7 @@ import { GET_OFFICIAL_RANK,GET_NATIONAL_RANK } from '../actions/rank'
 
 let initialState={
     officialRank: [],
-    nationalRank: [],
+    nationalRank: []
 };
 export default function rank(state=initialState,action){
     switch(action.type){

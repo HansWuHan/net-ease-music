@@ -1,28 +1,29 @@
-#!/usr/bin/env node
+#!/usr/bin/env node //这是一个 node 可执行文件
 
 /**
- * Module dependencies.
+ * 引入依赖模块
  */
 
+ //引入 app 实例。
 var app = require('../app');
-var debug = require('debug')('myapp:server');
+// 引入 debug 模块，打印调试日志。
+var debug = require('debug')('music:server');
+//载入http模块
 var http = require('http');
-
 /**
- * Get port from environment and store in Express.
+ * 设置端口
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '3002');
 app.set('port', port);
 
 /**
- * Create HTTP server.
+ * 创建一个http服务.
  */
 
 var server = http.createServer(app);
-
 /**
- * Listen on provided port, on all network interfaces.
+ * 监听端口
  */
 
 server.listen(port);
@@ -37,13 +38,13 @@ function normalizePort(val) {
   var port = parseInt(val, 10);
 
   if (isNaN(port)) {
-    // named pipe
-    return val;
+// named pipe
+return val;
   }
 
   if (port >= 0) {
-    // port number
-    return port;
+// port number
+return port;
   }
 
   return false;
@@ -55,25 +56,25 @@ function normalizePort(val) {
 
 function onError(error) {
   if (error.syscall !== 'listen') {
-    throw error;
+throw error;
   }
 
   var bind = typeof port === 'string'
-    ? 'Pipe ' + port
-    : 'Port ' + port;
+? 'Pipe ' + port
+: 'Port ' + port;
 
   // handle specific listen errors with friendly messages
   switch (error.code) {
-    case 'EACCES':
-      console.error(bind + ' requires elevated privileges');
-      process.exit(1);
-      break;
-    case 'EADDRINUSE':
-      console.error(bind + ' is already in use');
-      process.exit(1);
-      break;
-    default:
-      throw error;
+case 'EACCES':
+  console.error(bind + ' requires elevated privileges');
+  process.exit(1);
+  break;
+case 'EADDRINUSE':
+  console.error(bind + ' is already in use');
+  process.exit(1);
+  break;
+default:
+  throw error;
   }
 }
 
@@ -84,7 +85,7 @@ function onError(error) {
 function onListening() {
   var addr = server.address();
   var bind = typeof addr === 'string'
-    ? 'pipe ' + addr
-    : 'port ' + addr.port;
+? 'pipe ' + addr
+: 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
