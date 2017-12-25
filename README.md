@@ -1,4 +1,6 @@
 # net-ease-music
+
+[DEMO](https://www.youtube.com/watch?v=f58_gWmWb8E&feature=youtu.be) 
 * Composed a mobile web app with React, MongoDB/Mongoose, Node.js for online music playing
 * Developed the AJAX based frontend with Axio, Webpack, React, Redux and Antd-mobile for middlewares and reducers
 * Implemented MVC backend with express.js on MongoDB
